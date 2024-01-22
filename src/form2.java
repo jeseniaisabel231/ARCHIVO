@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class form2 {
+import javax.swing.*;
+
+public class form2 {
+    private JPanel panel1;
 }
