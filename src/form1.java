@@ -13,6 +13,11 @@ public class form1 {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                // Cerrar la ventana actual (Pantalla1)
+
+                // Abrir la nueva ventana (Pantalla2)
+                form2 pantalla2 = new form2();
+                pantalla2.mostrarPantalla2();
             }
         });
     }
