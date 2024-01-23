@@ -49,12 +49,12 @@
                   <text value="Agregar Archivo"/>
                 </properties>
               </component>
-              <component id="d1f16" class="javax.swing.JButton" binding="salirButton" default-binding="true">
+              <component id="d1f16" class="javax.swing.JButton" binding="cerrarButton" default-binding="true">
                 <constraints>
                   <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Salir"/>
+                  <text value="Cerrar"/>
                 </properties>
               </component>
               <component id="7bf32" class="javax.swing.JButton" binding="inicioButton" default-binding="true">
