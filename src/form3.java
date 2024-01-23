@@ -11,10 +11,10 @@ public class form3 {
     JPanel panel3;
 
     public void mostrarPantalla3() {
-        JFrame aplicacion = new JFrame("Pantalla 2");
+        JFrame aplicacion = new JFrame("Pantalla 3");
         aplicacion.setContentPane(new form3().panel3);
         aplicacion.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        aplicacion.setSize(600,480);
+        aplicacion.setSize(850,420);
         aplicacion.pack();
         aplicacion.setVisible(true);
     }

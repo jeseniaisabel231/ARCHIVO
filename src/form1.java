@@ -14,10 +14,21 @@ public class form1 {
             public void actionPerformed(ActionEvent e) {
 
                 // Cerrar la ventana actual (Pantalla1)
+                Main.frame.dispose();
 
                 // Abrir la nueva ventana (Pantalla2)
-                form2 pantalla2 = new form2();
-                pantalla2.mostrarPantalla2();
+                form3 pantalla2 = new form3();
+                pantalla2.mostrarPantalla3();
+            }
+        });
+        SALIRButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                // Cerrar la ventana actual (Pantalla1)
+                Main.frame.dispose();
+
+
             }
         });
     }
