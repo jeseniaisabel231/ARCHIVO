@@ -6,7 +6,7 @@ public class Main {
     static JFrame frame = new JFrame("primera pantalla");
     public static void main(String[] args) {
 
-        frame.setContentPane(new form3().pant3);
+        frame.setContentPane(new form3().pant4);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setSize(850,420);

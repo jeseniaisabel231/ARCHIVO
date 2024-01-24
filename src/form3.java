@@ -5,11 +5,11 @@ public class form3 {
     private JTable table1;
     private JCheckBox CHECKCheckBox;
     private JCheckBox CROSSCheckBox;
-    private JMenu Archivo;
+    public JPanel pant4;
+    private JMenu arc;
     private JMenuItem subir;
     private JMenuItem exportar;
     private JMenuItem salir;
-    public JMenuItem pant3;
 
     public void mostrarPantalla3() {
     }
