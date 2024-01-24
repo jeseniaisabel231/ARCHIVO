@@ -6,7 +6,7 @@ public class form3 {
     private JCheckBox CHECKCheckBox;
     private JCheckBox CROSSCheckBox;
     public JPanel pant4;
-    private JMenu arc;
+    private JMenu archivo;
     private JMenuItem subir;
     private JMenuItem exportar;
     private JMenuItem salir;

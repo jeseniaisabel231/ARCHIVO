@@ -80,7 +80,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="66d52" class="javax.swing.JMenu" binding="arc" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
+          <grid id="66d52" class="javax.swing.JMenu" binding="archivo" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="0">
             <constraints/>
             <properties>
               <text value="Archivo"/>
