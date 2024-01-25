@@ -79,11 +79,10 @@ public class form3 {
             public void actionPerformed(ActionEvent e) {
                 if (table1.getSelectedRow() >= 0 && si.isSelected() && !(no.isSelected())){
                     table1.getModel().setValueAt("Completa",table1.getSelectedRow(), 1);
-                    if(no.isSelected()){
-                        no.setSelected(false);
-                    }
+                    if (no.isSelected()) no.doClick();
                 } else if (table1.getSelectedRow() >= 0) {
                     table1.getModel().setValueAt("",table1.getSelectedRow(), 1);
+                    if (no.isSelected()) no.doClick();
                 } else {
                     return;
                 }
@@ -94,11 +93,10 @@ public class form3 {
             public void actionPerformed(ActionEvent e) {
                 if (table1.getSelectedRow() >= 0 && no.isSelected()){
                     table1.getModel().setValueAt("Incompleta",table1.getSelectedRow(), 1);
-                    if(si.isSelected()){
-                        si.setSelected(false);
-                    }
+                    if(si.isSelected()) si.doClick();
                 } else if (table1.getSelectedRow() >= 0) {
                     table1.getModel().setValueAt("",table1.getSelectedRow(), 1);
+                    if(si.isSelected()) si.doClick();
                 } else {
                     return;
                 }
@@ -121,7 +119,17 @@ public class form3 {
         exportar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                DefaultTableModel model = (DefaultTableModel) table1.getModel();
+                int rows = model.getRowCount();
+                int cols = model.getColumnCount();
 
+                for (int i = 0; i < rows; i++) {
+                    for (int j = 0; j < cols; j++) {
+                        Object value = model.getValueAt(i, j);
+                        System.out.print(value + "\t");
+                    }
+                    System.out.println();
+                }
             }
         });
 
