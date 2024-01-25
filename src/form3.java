@@ -129,6 +129,7 @@ public class form3 {
                         System.out.print(value + "\t");
                     }
                     System.out.println();
+                    System.out.println();
                 }
             }
         });
