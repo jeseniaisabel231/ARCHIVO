@@ -3,8 +3,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
 
 public class form3 {
     private JTable table1;
@@ -123,13 +122,11 @@ public class form3 {
                 int rows = model.getRowCount();
                 int cols = model.getColumnCount();
 
+                String[][] data = new String[rows][cols];
                 for (int i = 0; i < rows; i++) {
                     for (int j = 0; j < cols; j++) {
-                        Object value = model.getValueAt(i, j);
-                        System.out.print(value + "\t");
+                        data[i][j] = model.getValueAt(i, j).toString();
                     }
-                    System.out.println();
-                    System.out.println();
                 }
             }
         });
