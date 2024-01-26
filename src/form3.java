@@ -1,24 +1,32 @@
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
 import java.io.*;
+import java.text.SimpleDateFormat;
 
 public class form3 {
     private JTable table1;
     private JCheckBox si;
     private JCheckBox no;
     public JPanel pant4;
-    private JFormattedTextField formattedTextField1;
+    private JFormattedTextField formTextField;
     private JMenuBar menuBar;
     private JMenu archivo;
     private JMenuItem subir;
-    private JMenuItem exportar;
+    private JMenuItem acerca;
     private JMenuItem regresar;
+    private JLabel entLabel;
+    private JScrollPane scrollPane;
     static JFrame frame = new JFrame("primera pantalla");
 
     public form3() {
+
         try {
             BufferedReader reader = new BufferedReader(new FileReader("C:/Users/pablo/OneDrive/Escritorio/spotify-2023.csv"));
             DefaultTableModel model = null;
@@ -115,22 +123,20 @@ public class form3 {
             }
         });
 
-        exportar.addActionListener(new ActionListener() {
+
+
+        acerca.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                DefaultTableModel model = (DefaultTableModel) table1.getModel();
-                int rows = model.getRowCount();
-                int cols = model.getColumnCount();
+                SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+                Date date = new Date();
+                formTextField.setValue(formatter.format(date));
 
-                String[][] data = new String[rows][cols];
-                for (int i = 0; i < rows; i++) {
-                    for (int j = 0; j < cols; j++) {
-                        data[i][j] = model.getValueAt(i, j).toString();
-                    }
-                }
             }
         });
 
 
     }
+
+
 }
