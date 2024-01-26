@@ -42,7 +42,7 @@ public class form1 {
             public void actionPerformed(ActionEvent e) {
 
                 //Cerrar la ventana actual (Pantalla1)
-                Main.frame.dispose();
+                frame.dispose();
             }
         });
     }
