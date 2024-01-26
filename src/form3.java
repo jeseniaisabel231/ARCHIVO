@@ -154,6 +154,9 @@ public class form3 {
                 frame.pack();
                 frame.setSize(850,420);
                 frame.setVisible(true);
+
+
+
             }
         });
 
