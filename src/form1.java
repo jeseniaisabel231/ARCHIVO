@@ -7,6 +7,7 @@ public class form1 {
     public JPanel pant1;
     private JLabel bienvenido;
     private JButton CONTINUARButton;
+    //inicializar el atributo frame
     static JFrame frame = new JFrame("segunda pantalla");
     private JButton SALIRButton;
 
@@ -20,7 +21,9 @@ public class form1 {
 
                 // Cerrar la ventana actual (Pantalla1)
                 Main.frame.dispose();
+                //opcion, regresar(cierra ventana)
                 form3.frame.dispose();
+
                 // Ventana 2 (Pantalla2)
                 frame.setContentPane(new form3().pant4);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
