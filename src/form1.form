@@ -34,7 +34,7 @@
         </constraints>
         <properties>
           <font name="Arial Black" size="24" style="0"/>
-          <text value="A TUS ARCHIVOS"/>
+          <text value="A TUS ARCHIVO CSV"/>
         </properties>
       </component>
       <component id="8a8e7" class="javax.swing.JButton" binding="CONTINUARButton" default-binding="true">

@@ -1,12 +1,12 @@
 //importar librerias necesarias para el funcionamiento de la clase
-import java.util.Date;
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.*;
-import java.text.SimpleDateFormat;
+import java.util.Date;//almacenar fecha actual
+import javax.swing.*;//crea interfaz grafica de usuario
+import javax.swing.table.DefaultTableModel;//crear tabla para mostrar datos del archivo csv
+import java.awt.event.ActionEvent;//crear eventos para los botones
+import java.awt.event.ActionListener;//crear eventos para los botones
+import java.io.BufferedReader;//leer archivos csv
+import java.io.*;//realiza operaciones de entrada y salida de datos
+import java.text.SimpleDateFormat;//almacenar fecha actual en formato dd/mm/yyyy
 
 public class form3 {
     //declarar los atributos de la clase
